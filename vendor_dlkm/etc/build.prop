@@ -1,0 +1,22 @@
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.vendor_dlkm.brand=INOI
+ro.product.vendor_dlkm.device=INOI_A75_Elegance
+ro.product.vendor_dlkm.manufacturer=INOI_Limited
+ro.product.vendor_dlkm.model=A750
+ro.product.vendor_dlkm.name=INOI_A75_Elegance
+ro.vendor_dlkm.build.date=Tue Aug 26 10:34:39 CST 2025
+ro.vendor_dlkm.build.date.utc=1756175679
+ro.vendor_dlkm.build.fingerprint=INOI/INOI_A75_Elegance/INOI_A75_Elegance:14/UP1A.231005.007/50826:user/release-keys
+ro.vendor_dlkm.build.id=SP1A.210812.016
+ro.vendor_dlkm.build.tags=release-keys
+ro.vendor_dlkm.build.type=user
+ro.vendor_dlkm.build.version.incremental=50826
+ro.vendor_dlkm.build.version.release=12
+ro.vendor_dlkm.build.version.release_or_codename=12
+ro.vendor_dlkm.build.version.sdk=31
+# Auto-added by post_process_props.py
+persist.sys.usb.config=none
+# end of file
