@@ -1,0 +1,35 @@
+<Config>
+    <Item>
+        <key>DvsParam</key>
+        <value>{
+            "camts": 0,
+            "rs_readout": 21.9494,
+            "N": 9546,
+            "scale": 0.80,
+            "smooth": 0.001,
+            "threshold": 3.2,
+            "rs_rows_n": 21,
+            "crop": 0.3,
+            "dataflag": 1,
+            "strideflag": 1,
+            "lamr": 0.5,
+            "filters": ["FilterRS","FilterPose","FilterSteadyGL","FilterPostprocess"],
+            "fx": 1347.99637252,
+            "fy": 1351.50386022,
+            "cx":968.28426144,
+            "cy": 528.97409159,
+            "tf11": 0.00815833600154392,
+            "tf12": -0.9999662194647639,
+            "tf13": -0.0010007412420937186,
+            "tf21": -0.999930544362636,
+            "tf22": -0.008149524137129993,
+            "tf23": -0.008514206186188882,
+            "tf31": 0.008505763006839338,
+            "tf32": 0.0010701334898262642,
+            "tf33": -0.9999632527298118,
+            "notimeDiff":true,
+            "key": "NOTE 24"
+            }
+        </value>
+    </Item>
+</Config>

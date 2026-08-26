@@ -1,0 +1,13 @@
+on property:persist.sys.incts=1
+	setprop hwservicemanager.incts 1
+	stop cameraserver
+	stop camerahalserver
+	start camerahalserver
+	start cameraserver
+
+on property:persist.sys.incts=0
+	setprop hwservicemanager.incts 0
+	stop cameraserver
+	stop camerahalserver
+	start camerahalserver
+	start cameraserver
