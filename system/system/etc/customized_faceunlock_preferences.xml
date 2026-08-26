@@ -1,0 +1,42 @@
+<!-- 请修改该配置文件后,集成到/system/etc/目录下面 -->
+<!-- 各个选项请不要修改对应的key值,只修改defaultValue的值,在取值范围内选取,设置取值范围之外的值则为无效值 -->
+<FacePreferences>
+    <!-- 是否配置活体检测功能。打开时，能防止大部分电子照片的防伪攻击，但会稍微影响解锁时间，关闭时，安全性能下降。
+         如果需要加生物防伪检测（活体检测），请先确认机器硬件配置是否符合标准：
+         A.前置sensor 5M以下，前摄解析力1300以下的机器不支持生物防伪检测；
+         B.内存2G以下的机器不建议支持生物防伪检测，会对速度和内存占用率产生比较大的影响。-->
+    <!-- 取值范围：{on,off} -->
+    <!-- 因功能不具备平台性，平台默认为on -->
+    <Item>
+        <key>face_spoof_enable</key>
+        <defaultValue>on</defaultValue>
+    </Item>
+	<!-- 是否配置闭眼检测功能。打开时，能防止人在闭眼状态下被解锁，但会稍微影响解锁时间，关闭时，安全性能下降。-->
+    <!-- 取值范围：{on,off} 默认为on-->
+    <Item>
+        <key>face_eye_enable</key>
+        <defaultValue>on</defaultValue>
+    </Item>
+    <!--光线传感是否正常配置，此值需要项目确认光线传感器是否能正常使用，大部分机器传感器是正常的，
+    只有小部分机器没有正常配置光线传感器，如果此时强行制此值为on，人脸解锁的功能会异常 -->
+    <!-- 取值范围：{on,off},默认为on -->
+    <Item>
+        <key>face_light_sensor_enable</key>
+        <defaultValue>on</defaultValue>
+    </Item>
+	<!-- 快速识别默认开关-->
+    <!-- 快速识别的开关状态的默认值，此值只在用户没有手动去开/关快速识别功能的时候生效-->
+    <!-- 取值范围：{on,off} 默认为on-->
+    <Item>
+        <key>face_fast_recog_default</key>
+        <defaultValue>off</defaultValue>
+    </Item>
+    <!-- 快速识别默认值,只有快速识别开关打开才有效-->
+    <!-- 取值范围：[0.52, 0.6]-->
+    <Item>
+        <key>face_fast_recog_value</key>
+        <defaultValue>0.53</defaultValue>
+    </Item>
+   
+</FacePreferences>
+
