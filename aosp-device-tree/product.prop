@@ -1,0 +1,8 @@
+# Miscellaneous
+remote_provisioning.hostname=remoteprovisioning.googleapis.com
+ro.com.google.acsa=true
+ro.com.google.gmsversion=14_202408
+ro.opa.eligible_device=true
+ro.product.cpu.pagesize.max=4096
+ro.setupwizard.rotation_locked=true
+
