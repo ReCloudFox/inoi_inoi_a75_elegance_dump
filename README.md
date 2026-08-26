@@ -1,0 +1,20 @@
+## sys_mssi_64_cn_armv82-user 14 UP1A.231005.007 60604 release-keys
+- Manufacturer: inoi-limited
+- Platform: mt6789
+- Codename: INOI_A75_Elegance
+- Brand: INOI
+- Flavor: sys_mssi_64_cn_armv82-user
+- Release Version: 14
+- Kernel Version: 5.10.226
+- Id: UP1A.231005.007
+- Incremental: 60604
+- Tags: release-keys
+- CPU Abilist: arm64-v8a,armeabi-v7a,armeabi
+- A/B Device: true
+- Treble Device: true
+- Locale: en-US
+- Screen Density: 480
+- Fingerprint: INOI/INOI_A75_Elegance/INOI_A75_Elegance:14/UP1A.231005.007/60604:user/release-keys
+- OTA version: 
+- Branch: sys_mssi_64_cn_armv82-user-14-UP1A.231005.007-60604-release-keys
+- Repo: inoi_inoi_a75_elegance_dump
