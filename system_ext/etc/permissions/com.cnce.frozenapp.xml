@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+
+    <!--DKFrozenApp-->
+    <privapp-permissions package="com.cnce.frozenapp">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+    </privapp-permissions>
+
+</permissions>
