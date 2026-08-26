@@ -1,0 +1,34 @@
+
+on post-fs
+	restorecon /mnt/vendor/persist
+	mkdir /mnt/vendor/persist/xr
+	chown system system /mnt/vendor/persist/xr
+	restorecon /mnt/vendor/persist/xr
+
+
+# for runtime test control charge or not
+#  0 start charging and enable power path ;  1 stop charging and disable power path
+#  current_cmd:  for charge control
+#  en_power_path=1  if usb pluged, not consumeing power energy from battery.
+
+on property:debug.runin.charge.switch=0
+   write /proc/mtk_battery_cmd/current_cmd "0 0"
+   write /proc/mtk_battery_cmd/en_power_path 1
+   
+on property:debug.runin.charge.switch=1
+   write /proc/mtk_battery_cmd/current_cmd "1 1"
+   write /proc/mtk_battery_cmd/en_power_path 0
+# 
+
+
+
+service phasecheckserver /vendor/bin/phasecheckserver
+    class main
+    user system
+    group system bluetooth root
+    
+on property:persist.sys.gesture=1
+   write sys/devices/platform/soc/11013000.spi3/spi_master/spi3/spi3.0/fts_gesture_mode 1
+	
+on property:persist.sys.gesture=0
+   write sys/devices/platform/soc/11013000.spi3/spi_master/spi3/spi3.0/fts_gesture_mode 0
